@@ -5,6 +5,10 @@ app.get('/', (req, res) => {   //Route  // Function within is called Route Handl
     res.send('Hello World!!!');
 });
 
+app.get('/jsontest', (req, res) => {   //Route  // Function within is called Route Handler
+    res.json('Hello Json!!!');
+});
+
 app.get('/api/courses', (req, res) => {   //API Endpoint
     res.send([1,2,3]);
 });
